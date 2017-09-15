@@ -36,10 +36,12 @@ body {
       height: 50%;
     }
     .info {
+      height: 50%;
       text-align: center;
       h1 {
-        font-size: 32px;
+        position: relative;
         margin-top: 10%;
+        font-size: 32px;
         color: #464a4c;
       }
       h3 {
@@ -77,15 +79,19 @@ body {
 @media screen and (max-width: 500px) {
   body {
     .card {
-      width: 350px;
-      height: 65%;
-      top: 17.5%;
+      width: 90%;
+      height: 75%;
+      top: 12.5%;
       .picture {
         background-position: center;
       }
       .info {
+        h1 {
+          margin-top: 12%;
+        }
         .icons {
           ul {
+            margin: 11% 30px 0 30px;
             padding: 20px 0 0 0;
             li {
               a {
