@@ -73,3 +73,51 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    .card {
+      width: 325px;
+      height: 65%;
+      top: 17.5%;
+      .info {
+        .icons {
+          ul {
+            padding: 20px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 414px) {
+  body {
+    .card {
+      width: 315px;
+      height: 90%;
+      top: 5%;
+      .info {
+        h1 {
+          font-size: 25px;
+        }
+        h3 {
+          font-size: 12px;
+        }
+        .icons {
+          ul {
+            margin: 8% 30px 0 30px;
+            padding: 10px 0 0 0;
+            li {
+              a {
+                svg {
+                  width: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
