@@ -19,43 +19,41 @@ body {
   height: 100vh;
   width: 100vw;
   .card {
+    padding: 0;
     position: relative;
     margin: auto;
-    top: 10%;
-    width: 475px;
-    height: 80%;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 6px 6px 12px 12px;
     border: transparent;
     box-shadow: 0px 4px 4px rgba(51,121,163,.1);
     .picture {
       background-image: url('../assets/ocean.jpg');
       background-size: cover;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      height: 50%;
+      background-position: center;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      height: 15rem;
     }
     .info {
-      height: 50%;
       text-align: center;
+      padding: 1rem 0;
       h1 {
-        position: relative;
-        margin-top: 10%;
-        font-size: 32px;
+        margin-top: 1.75rem;
+        font-size: 1.85rem;
         color: #464a4c;
       }
       h3 {
-        font-size: 18px;
-        margin-top: 5%;
+        font-size: 1.15rem;
+        margin-top: 1.25vw;
         font-weight: 100;
         color: #8797A1;
       }
       .icons {
-        height: 40%;
+        margin: 3rem auto 0;
         ul {
-          border-top: .5px solid $powder;
-          margin: 10% 30px 0 30px;
-          padding: 30px 0 0 0;
+          border-top: 1px solid $powder;
+          padding: 1.5rem 0 .5rem;
+          margin-bottom: 0;
           li {
             display: inline-block;
             list-style: none;
@@ -63,7 +61,7 @@ body {
               svg {
                 transition: .5s;
                 fill: #8797A1;
-                width: 40px;
+                width: 2rem;
               }
               svg:hover {
                 fill: $steel;
@@ -76,64 +74,10 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    .card {
-      width: 90%;
-      height: 75%;
-      top: 12.5%;
-      .picture {
-        background-position: center;
-      }
-      .info {
-        h1 {
-          margin-top: 12%;
-        }
-        .icons {
-          ul {
-            margin: 11% 30px 0 30px;
-            padding: 20px 0 0 0;
-            li {
-              a {
-                svg {
-                  width: 35px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-height: 414px) {
-  body {
-    .card {
-      width: 315px;
-      height: 90%;
-      top: 5%;
-      .info {
-        h1 {
-          font-size: 25px;
-        }
-        h3 {
-          font-size: 12px;
-        }
-        .icons {
-          ul {
-            margin: 8% 30px 0 30px;
-            padding: 15px 0 0 0;
-            li {
-              a {
-                svg {
-                  width: 30px;
-                }
-              }
-            }
-          }
-        }
-      }
+@media screen and (max-width: 767px) {
+  .info {
+    h3 {
+      font-size: 1rem !important;
     }
   }
 }
