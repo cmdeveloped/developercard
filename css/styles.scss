@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200');
 
-$steel: #3579A3;
-$powder: #EDF6F8;
-$turquoise: #58C5DF;
-$lightblue: #B9DAE9;
+$slate: #5f808a;
+$lightGrey: #d3d5d2;
+$darkSlate: #141D22;
+$darkSalmon: #e1a86f;
 
 $font1: 'Raleway', sans-serif;
 $font2: 'Roboto Condensed', sans-serif;
 
 body {
   font-family: $font1;
-  background: #EDF6F8; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(60deg, #EDF6F8, #3579A3); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(60deg, #EDF6F8, #3579A3); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(60deg, #EDF6F8, #3579A3); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(60deg, #EDF6F8, #3579A3); /* Standard syntax */
+  background: $lightGrey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(60deg, $lightGrey, $darkSalmon); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(60deg, $lightGrey, $darkSalmon); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(60deg, $lightGrey, $darkSalmon); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(60deg, $lightGrey, $darkSalmon); /* Standard syntax */
   height: 100vh;
   width: 100vw;
   .card {
@@ -27,7 +27,7 @@ body {
     border: transparent;
     box-shadow: 0px 4px 4px rgba(51,121,163,.1);
     .picture {
-      background-image: url('../assets/ocean.jpg');
+      background-image: url('../assets/Cookies.jpg');
       background-size: cover;
       background-position: center;
       border-top-left-radius: 6px;
@@ -46,12 +46,12 @@ body {
         font-size: 1.15rem;
         margin-top: 1.25vw;
         font-weight: 100;
-        color: #8797A1;
+        color: $darkSlate;
       }
       .icons {
         margin: 3rem auto 0;
         ul {
-          border-top: 1px solid $powder;
+          border-top: 1px solid $lightGrey;
           padding: 1.5rem 0 .5rem;
           margin-bottom: 0;
           li {
@@ -60,11 +60,11 @@ body {
             a {
               svg {
                 transition: .5s;
-                fill: #8797A1;
+                fill: $lightGrey;
                 width: 2rem;
               }
               svg:hover {
-                fill: $steel;
+                fill: $slate;
               }
             }
           }
